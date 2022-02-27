@@ -1,18 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sports DB</title>
     <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="link/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row row-cols-lg-2 row-cols-1 mx-auto pt-5 text-center">
+        <div class="col">
+          <div class="input-group input-group-lg ">
+            <input
+              id="search-box"
+              type="text"
+              class="form-control"
+              aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-lg"
+            />
+            <span class="input-group-text" 
+            onclick="allPlayers()" id="search-btn"> Search </span>
+          </div>
+        </div>
+        <div class="col">
+          <h2>Right Side</h2>
+        </div>
+      </div>
+    </div>
 
-
+    <!-- Bootstrap JS -->
+    <script src="link/js/bootstrap.bundle.min.js"></script>
     <!-- CUSTOM JS -->
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
